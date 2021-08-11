@@ -180,3 +180,69 @@ footer {
     padding: 15px;
 }
 /* Footer */
+
+
+/*  Estilos mobile */
+
+/* 
+Rangos
+
+0px - 500px
+Mobile - Smarthphones
+
+500px a 1200px
+Tablets
+
+1200px - 3000px
+Monitor computadora
+
+3000px - ~
+Pantallas, Televisores,
+
+*/
+
+@media screen and (max-width: 900px) {
+
+    nav#inicio header {
+        margin-bottom: 15px;
+    }
+
+    section.video h1 {
+        font-size: 2em;
+        padding: 0px 5%;
+        text-align: center;
+    }
+
+    section.menu-pizzas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav#inicio img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    section.menu-pizzas {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-pizzas .pizzadestacada {
+        grid-column: auto;
+    }
+}
+
+/* Cuando el dispositivo esta acostado */
+@media screen and (orientation: landscape) {
+    nav#inicio {
+        flex-direction: row;
+    }
+}
+
+/* Cuando el dispositivo esta parado */
+@media screen and (orientation: portrait) {
+    nav#inicio {
+        flex-direction: column;
+    }
+}
