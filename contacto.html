@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COntacto</title>
+</head>
+<body>
+    <h1>Manda tu informacion</h1>
+    <form method="GET" action="" autocomplete="on">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Jesus Perez" maxlength="6" required>
+        <br>
+        <br>
+        <label for="biografia">Biografia</label>
+        <textarea name="biografia" id="boigrafia" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <label for="comidafav">Que comida te gusta?</label>
+        <select name="comidafav" id="comidafav" >
+            <option value="pizza">Pizza</option>
+            <option value="tacos">Tacos</option>
+            <option value="tortas">Tortas</option>
+            <option value="tamales">Tamales</option>
+            <option value="papas">Papas</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Empieza gustos personales -->
+        <fieldset>
+            <legend><h2>Gustos personales</h2></legend>
+            <h3>Escoje tu animal Favorito</h3>
+            <label for="animal">Tigre</label>
+            <input type="checkbox" name="animal" id="animal" value="tigre">
+            <label for="animal">Oso</label>
+            <input type="checkbox" name="animal" id="animal" value="oso">
+            <label for="animal">Serpiente</label>
+            <input type="checkbox" name="animal" id="animal" value="serpiente">
+
+            <h3>Cual es tu idioma nativo?</h3>
+            <label for="español">Español</label>
+            <input type="radio" name="idioma" id="español">
+            <label for="ingles">Ingles</label>
+            <input type="radio" name="idioma" id="ingles">
+            <label for="frances">Frances</label>
+            <input type="radio" name="idioma" id="frances">
+            <br>
+            <br>
+            <label for="musica">
+                <h3>Cual es tu genero de musica preferido?</h3>
+            </label>
+            <input list="generos" name="musica" id="musica">
+
+            <datalist id="generos">
+                <option value="Rock">
+                <option value="Pop">
+                <option value="Metal">
+                <option value="Jazz">
+                <option value="Clasica">
+            </datalist>
+            <br>
+            <br>
+            <label for="grupos">
+                <h3>Cuale es tu grupo favorito de musica?</h3>
+            </label>
+            <select id="grupos" name="grupos">
+                <optgroup label="Rock">
+                    <option value="Kiss">Kiss</option>
+                    <option value="RollingStones">RollingStones</option>
+                </optgroup>
+                <optgroup label="Pop">
+                    <option value="Michael Jackson">Michael Jackson</option>
+                    <option value="Madona">Modona</option>
+                </optgroup>
+                <optgroup label="Metal">
+                    <option value="Metallica">Metallica</option>
+                </optgroup>
+                <optgroup label="Jazz">
+                    <option value="Billie Joliday">Billie Joliday</option>
+                </optgroup>
+                <optgroup label="Clasica">
+                    <option value="Bach">Bach</option>
+                    <option value="Beethoven">Beethoven</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <!-- Termina gustos personales -->
+        <br>
+        <br>
+        <label for="password">Ingresa una contraseña</label>
+        <input id="password" name="password" type="password">
+        <br>
+        <br>
+        <label for="color">Escoge un color</label>
+        <input id="color" name="color" type="color">
+        <br>
+        <br>
+        <label for="cumple">Seleciona el dia de tu cumpleaños</label>
+        <input id="cumple" name="cumple" type="date">
+        <br>
+        <br>
+        <label for="email">Ingresa un correo electronico</label>
+        <input id="email" name="email" type="email">
+        <br>
+        <br>
+        <label for="logo">Ingresa tu logo</label>
+        <input id="logo" name="logo" type="file">
+        <br>
+        <br>
+        <label for="edad">Edad</label>
+        <input id="edad" name="edad" type="number">
+        <br>
+        <br>
+        <label for="experiencia">Experiencia</label>
+        <input id="experiencia" name="experiencia" type="range" min="0" max="100">
+        <br>
+        <br>
+        <label for="telefono">Teléfono</label>
+        <input id="telefono" name="telefono" type="phone">
+        <br>
+        <br>
+        <input type="reset" value="Reestablecer">
+
+        <label for="logo">Ingresa tu logo</label>
+        <input id="logo" name="logo" type="file" multiple>
+        <button type="submit">Enviar</button>
+        <button type="button" >Boton</button>
+    </form>
+</body>
+</html>

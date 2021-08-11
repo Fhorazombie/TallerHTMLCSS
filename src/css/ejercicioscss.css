@@ -1,0 +1,42 @@
+
+body{
+    font-family: 'Fredoka One', cursive;
+}
+#titulo{
+    color: rgba(67, 134, 4); 
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Pacifico', cursive;
+    background-image: url(../img/pizza-pattern-pizza-background-doodle-style-vector-illustration-pizza-pattern-pizza-background-doodle-style-vector-113323031.jpg);
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.subtitulos{
+    font-style:italic;
+    font-weight:lighter;
+    font-family: 'Fredoka One', cursive;
+}
+.parrafo{
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.columna{
+    width: 50%;
+    background-color: #99f189;
+    color: #b830d0;
+    border: dashed 2px #f00;
+}
+
+.imagen img.tortuga {
+    width: 70%;
+}
+
+.menu{
+    list-style-image: url('../img/descargar.png');
+}

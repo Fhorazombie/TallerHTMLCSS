@@ -1,0 +1,182 @@
+body{
+    background-image: url(../img/pizza-pattern-pizza-background-doodle-style-vector-illustration-pizza-pattern-pizza-background-doodle-style-vector-113323031.jpg);
+    font-family: 'Fredoka One', cursive;
+    background-size: 250px;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+nav#inicio {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(181deg, #007656, #132613);
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+}
+
+nav#inicio header{
+    display: inline-block;
+    text-align: center;
+}
+
+nav#inicio img{
+    display: inline-block;
+}
+
+nav#inicio ul {
+    display: inline-block;    
+    margin: 0px;
+    padding: 0px;
+}
+
+nav#inicio ul li {
+    display: inline-block;
+    margin: 0px 9px;
+    text-transform: uppercase;
+}
+
+nav#inicio ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav#inicio header h1 {
+    margin: 0px;
+    color: #fff;
+}
+
+
+/* Video de fondo */
+article {
+    max-width: 1200px;    
+    background-color: #026f50f5;
+    padding: 20px;
+}
+
+section.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 150px);
+    margin: 150px auto 0px;
+    position: relative;
+    background-color: #000;
+}
+
+section.video h1 {
+    font-size: 4em;
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.video .video-back{
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+/* Video de fondo */
+
+
+/* Estilos del Tarjeta */
+.tarjeta {
+    background: #e1ffd8;
+    margin: 20px 0px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px 1px #000;
+}
+
+.tarjeta .imagen-tarjeta {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.tarjeta .imagen-tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+
+.tarjeta.pizzadestacada .imagen-tarjeta {
+    height: 400px;
+    opacity: 0.7;
+}
+
+.tarjeta .imagen-tarjeta:hover > img, .tarjeta.pizzadestacada .imagen-tarjeta:hover > img {
+    transform: scale(2);
+    opacity: 1;
+}
+
+.tarjeta .contenido-tarjeta {
+    padding: 15px;
+}
+/* Estilos del Tarjeta */
+
+/* Boton primario */
+.button-primario {
+    background-color: #0b7456;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    margin: auto;
+    display: block;
+    font-family: 'Fredoka One', cursive;
+    text-decoration: none;
+    text-align: center;
+    transition: all 2s ease;
+}
+.button-primario:hover {
+    background-color: #fff;
+    color: #0b7456;
+}
+/* Boton primario */
+
+/* Grid de menu */
+section.menu-pizzas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-pizzas .pizzadestacada{
+    grid-column: span 2;
+}
+/* Grid de menu */
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333f38;
+    padding: 15px;
+}
+/* Footer */
